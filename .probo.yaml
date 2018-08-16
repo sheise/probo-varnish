@@ -8,6 +8,8 @@ steps:
   databaseUpdates: true
   clearCaches: true
   varnish: true
+  settingsAppend: |
+    $conf['cache_backends'][] = 'sites/all/modules/varnish/varnish.cache.inc';
 - name: Generate login link
   command: 'drush uli'
 
