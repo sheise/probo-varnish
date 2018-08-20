@@ -1,0 +1,15 @@
+assets:
+- drupal7.201808151534367827.gz
+steps:
+- name: Site setup
+  plugin: Drupal
+  database: drupal7.201808151534367827.gz 
+  databaseGzipped: true
+  databaseUpdates: true
+  clearCaches: true
+  varnish:
+    pizza: cheese
+    apple: banana
+- name: Generate login link
+  command: 'drush uli'
+
