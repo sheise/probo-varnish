@@ -10,6 +10,7 @@ steps:
   varnish:
     pizza: cheese
     apple: banana
+    enable: true
 - name: Generate login link
   command: 'drush uli'
 
