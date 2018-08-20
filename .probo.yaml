@@ -7,6 +7,9 @@ steps:
   databaseGzipped: true
   databaseUpdates: true
   clearCaches: true
+  varnish:
+    pizza: cheese
+    apple: banana
 - name: Generate login link
   command: 'drush uli'
 
