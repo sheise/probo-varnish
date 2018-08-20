@@ -1,5 +1,6 @@
 assets:
 - drupal7.201808151534367827.gz
+- my-varnish.txt
 steps:
 - name: Site setup
   plugin: Drupal
@@ -8,9 +9,8 @@ steps:
   databaseUpdates: true
   clearCaches: true
   varnish:
-    pizza: cheese
-    apple: banana
     enable: true
+    path: '/assets/my-varnish.txt'
 - name: Generate login link
   command: 'drush uli'
 
