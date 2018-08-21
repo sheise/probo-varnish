@@ -12,3 +12,4 @@ steps:
     enable: true
 - name: Generate login link
   command: 'drush uli'
+
