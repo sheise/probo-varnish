@@ -8,8 +8,6 @@ steps:
   databaseGzipped: true
   databaseUpdates: true
   clearCaches: true
-  varnish:
-    enable: true
 - name: Generate login link
   command: 'drush uli'
 
