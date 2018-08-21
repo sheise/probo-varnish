@@ -10,6 +10,7 @@ steps:
   clearCaches: true
   varnish:
     enable: true
+    pathToVcl: '/assets/my-varnish.txt'
 - name: Generate login link
   command: 'drush uli'
 
